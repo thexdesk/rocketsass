@@ -27,7 +27,7 @@
   "homepage": "https://github.com/r-spacex/rocketsass#readme",
   "dependencies": {
     "colors": "^1.1.2",
-    "commander": "^2.12.2",
+    "commander": "^2.20.3",
     "find-up": "^2.1.0",
     "node-sass": "^4.12.0",
     "read-yaml": "^1.1.0"
