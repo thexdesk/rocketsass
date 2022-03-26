@@ -9,7 +9,9 @@
   "scripts": {
     "lint": "node_modules/.bin/eslint *.js **/*.js",
     "test": "node test/test.js && npm run lint",
-    "docs": "mkdir docs && jsdoc2md index.js > docs/index.md"
+    "docs": "mkdir docs && jsdoc2md index.js > docs/index.md",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -30,7 +32,8 @@
     "commander": "^2.12.2",
     "find-up": "^2.1.0",
     "node-sass": "^4.12.0",
-    "read-yaml": "^1.1.0"
+    "read-yaml": "^1.1.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
@@ -42,5 +45,6 @@
     "bin/",
     "src/",
     "index.js"
-  ]
+  ],
+  "snyk": true
 }
